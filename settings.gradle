@@ -1,2 +1,3 @@
 rootProject.name = "Clean Architecture Test"
 include ':app'
+include ':domain'
