@@ -1,7 +1,7 @@
-package com.example.data.repository
+package com.example.data.network
 
-import com.example.data.repository.bookapi.BaseUrl
-import com.example.data.repository.bookapi.BookApi
+import com.example.data.network.bookapi.BaseUrl
+import com.example.data.network.bookapi.BookApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

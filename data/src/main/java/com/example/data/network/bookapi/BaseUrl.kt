@@ -1,4 +1,4 @@
-package com.example.data.repository.bookapi
+package com.example.data.network.bookapi
 
 class BaseUrl {
     companion object {
