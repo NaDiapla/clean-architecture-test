@@ -1,7 +1,6 @@
-package com.example.data.repository
+package com.example.data.source
 
 import com.example.domain.entity.BookVolumes
-import kotlinx.coroutines.flow.Flow
 
 interface RemoteDataSource {
     suspend fun getBooks(
