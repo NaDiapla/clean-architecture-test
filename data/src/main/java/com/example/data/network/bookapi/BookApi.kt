@@ -1,6 +1,6 @@
 package com.example.data.network.bookapi
 
-import com.example.domain.entities.BookVolumes
+import com.example.data.model.BookVolumes
 import retrofit2.http.GET
 import retrofit2.http.Headers
 import retrofit2.http.Query
