@@ -1,4 +1,4 @@
-package com.example.domain.entity
+package com.example.domain.entities
 
 data class BookVolumes(
     val items: List<BookItem>

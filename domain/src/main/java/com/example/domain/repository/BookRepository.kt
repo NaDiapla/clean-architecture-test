@@ -1,7 +1,7 @@
 package com.example.domain.repository
 
-import com.example.domain.entity.BookItem
-import com.example.domain.entity.BookVolumes
+import com.example.domain.entities.BookItem
+import com.example.domain.entities.BookVolumes
 import kotlinx.coroutines.flow.Flow
 
 interface BookRepository {

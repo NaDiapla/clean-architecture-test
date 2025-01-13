@@ -1,6 +1,6 @@
 package com.example.domain.usecase
 
-import com.example.domain.entity.BookItem
+import com.example.domain.entities.BookItem
 import com.example.domain.repository.BookRepository
 import javax.inject.Inject
 

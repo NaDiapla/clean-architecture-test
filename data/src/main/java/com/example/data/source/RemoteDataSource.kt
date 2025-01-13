@@ -1,6 +1,6 @@
 package com.example.data.source
 
-import com.example.domain.entity.BookVolumes
+import com.example.domain.entities.BookVolumes
 
 interface RemoteDataSource {
     suspend fun getBooks(
