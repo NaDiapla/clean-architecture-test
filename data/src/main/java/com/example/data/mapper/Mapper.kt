@@ -7,17 +7,18 @@ import com.example.data.model.VolumeInfo
 
 object Mapper {
     fun mapperToBookVolumes(bookVolumes: BookVolumes): com.example.domain.entities.BookVolumes {
-        val mappingList = mutableListOf<com.example.domain.entities.BookItem>()
-        bookVolumes.items.forEach {
-            mappingList.add(mapperToBookItem(it))
-        }
-
         return com.example.domain.entities.BookVolumes(
-            mappingList.toList()
+            bookVolumes.items.map {
+                com.example.domain.entities.BookItem(
+                    it.id,
+                    mapperToVolumeInfo(it.volumeInfo),
+                    it.favorite
+                )
+            }
         )
     }
 
-    private fun mapperToBookItem(bookItem: BookItem): com.example.domain.entities.BookItem {
+    fun mapperToBookItem(bookItem: BookItem): com.example.domain.entities.BookItem {
         return com.example.domain.entities.BookItem(
             id = bookItem.id,
             volumeInfo = mapperToVolumeInfo(bookItem.volumeInfo),
