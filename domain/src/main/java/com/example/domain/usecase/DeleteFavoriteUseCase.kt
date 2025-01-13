@@ -6,5 +6,5 @@ import javax.inject.Inject
 class DeleteFavoriteUseCase @Inject constructor(
     private val repository: BookRepository
 ) {
-    fun execute(id: String) = repository.deleteFavoriteBook(id)
+    suspend fun execute(id: String) = repository.deleteFavoriteBook(id)
 }

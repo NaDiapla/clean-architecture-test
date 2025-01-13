@@ -6,7 +6,7 @@ import javax.inject.Inject
 class GetBooksUseCase @Inject constructor(
     private val repository: BookRepository
 ) {
-    fun execute(
+    suspend fun execute(
         query: String,
         printType: String,
         maxResult: Int,

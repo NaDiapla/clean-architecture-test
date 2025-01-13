@@ -6,5 +6,5 @@ import javax.inject.Inject
 class GetFavoriteBooksUseCase @Inject constructor(
     private val repository: BookRepository
 ) {
-    fun execute(index: Int) = repository.getFavoriteBooks(index)
+    suspend fun execute(index: Int) = repository.getFavoriteBooks(index)
 }
