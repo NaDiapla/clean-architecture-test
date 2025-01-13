@@ -39,6 +39,9 @@ data class VolumeInfo (
 )
 
 data class ImageLinks (
+    @SerializedName("smallThumbnail")
+    val smallThumbnail: String?,
+
     @SerializedName("thumbnail")
     var thumbnail: String
 )
